@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <!--servlet配置-->
+   <!-- FileImageUploadServlet-->
+    <servlet>
+        <servlet-name>FileImageUploadServlet</servlet-name>
+        <servlet-class>com.qwm.loadservice.FileImageUploadServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FileImageUploadServlet</servlet-name>
+        <url-pattern>/FileImageUploadServlet</url-pattern>
+    </servlet-mapping>
+
+    <!--UploadServlet-->
+    <servlet>
+        <servlet-name>UploadServlet</servlet-name>
+        <servlet-class>com.qwm.loadservice.UploadServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UploadServlet</servlet-name>
+        <url-pattern>/UploadServlet</url-pattern>
+    </servlet-mapping>
+
+    <!--XmServlet-->
+    <servlet>
+        <servlet-name>XmServlet</servlet-name>
+        <servlet-class>com.qwm.loadservice.XmServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>XmServlet</servlet-name>
+        <url-pattern>/XmServlet</url-pattern>
+    </servlet-mapping>
+</web-app>
